@@ -1,0 +1,53 @@
+//Colors
+
+//Primary
+
+//Text
+$VeryDarkdeSaturatedBlue: hsl(238, 29%, 16%);
+$SoftRed: hsl(14, 88%, 65%);
+
+//Gradient
+//Background gradient:
+$SoftViolet: hsl(273, 75%, 66%);
+$SoftBlue: hsl(240, 73%, 65%);
+
+//Neutral
+//Text
+$VeryDarkGrayishBlue: hsl(237, 12%, 33%);
+$DarkGrayishBlue: hsl(240, 6%, 50%);
+
+//Dividers
+$LightGrayishBlue: hsl(240, 5%, 91%);
+
+:root{
+    font-size: 12px;}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient($SoftViolet, $SoftBlue);
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 320px;
+}
+
+.faq{
+    margin: 20px;
+}

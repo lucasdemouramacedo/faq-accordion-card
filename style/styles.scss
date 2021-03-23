@@ -31,10 +31,16 @@ $LightGrayishBlue: hsl(240, 5%, 91%);
 body{
     font-family: 'Kumbh Sans', sans-serif;
     background: linear-gradient($SoftViolet, $SoftBlue);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
 }
 
 .main{
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,21 +48,36 @@ body{
 }
 
 .card{
+    border-radius: 25px;
+    background: #fff;
+    overflow: visible;
+    width: 90%;
+    height: 550px;
+    margin-top:100px;
+}
+
+.card-img{
+    position: relative;
+    height: 120px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
-    width: 330px;
-    border-radius: 30px;
-    height: 70vh;
-    margin-top: 80px;
+}
+
+.pattern-mobile{
+    position: absolute;
+    margin-top: -12px;
+}
+.online-mobile{
+    position: absolute;
+    margin-top: -140px;
+    margin-left: -28px;
 }
 
 .faq{
-    margin: 20px;
-    text-align: center;
-    position: static;
-    width: 300px;
+    padding: 30px;
+    text-align: justify;
 }
 
 .faq-title{
@@ -64,33 +85,41 @@ body{
     font-weight: 700;
     color: $VeryDarkdeSaturatedBlue;
     text-align: center;
-    margin-bottom: 20px;
 }
 .faq-item{
     font-size: 14px;
     font-weight: 400;
     color: $VeryDarkGrayishBlue;
     text-align:left;
-    margin-bottom: 20px;
     border-bottom: 1px solid $LightGrayishBlue;
-    padding-bottom: 10px;
 }
 
 .faq-item-title{
+    display: inline-block;
     justify-content: space-between;
+    cursor: context-menu;
+}
+
+.faq-item-title .title{
     flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
 }
+.arrow-icon{
+    width: 50px;
+}
+.arrow-icon img{
+    align-content:flex-end;
+}
+
 
 .faq-item-description{
     display: none;
     animation: test 0.3s ease-in;
     color: $DarkGrayishBlue;
     font-size: 12px;
+    cursor: context-menu;
 }
 
 //prestar atençõa no icone, ele não esta junto do titulo da pergunta

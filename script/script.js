@@ -1,9 +1,11 @@
-function show(e) {
+function show(des, til) {
 
-    state = document.getElementById(e).style.display;
-    if(state == "block"){
-        document.getElementById(e).style.display = "none";
+    state = document.getElementById(des).style.display;
+    if(state == "none"){
+        document.getElementById(des).style.display = "block";
+        document.getElementById(til).style.fontWeight = 700;
     }else{
-        document.getElementById(e).style.display = "block";
+        document.getElementById(des).style.display = "none";
+        document.getElementById(til).style.fontWeight = 400;
     }
 }

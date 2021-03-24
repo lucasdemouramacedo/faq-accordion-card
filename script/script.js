@@ -1,4 +1,4 @@
-function show(des, til, arr){
+function show(des){
     state = document.getElementById(des).style.display;
 
     i = 1;
@@ -14,7 +14,7 @@ function show(des, til, arr){
         }else{
             document.getElementById(d).style.display = "block";
             document.getElementById(t).style.fontWeight = 700;
-            document.getElementById(a).style.transform = "rotate(180deg)";
+            document.getElementById(ar).style.transform = "rotate(180deg)";
         }
     }
 }

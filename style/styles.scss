@@ -142,7 +142,7 @@ body{
 
     .card{
         display: grid;
-        width: 65%;
+        width: 900px;
         margin: 0px;
         height: 500px;
         grid-template-columns:50% 50%;
@@ -158,17 +158,38 @@ body{
 
         .pattern-mobile{
             position: relative;
-        margin-top: -300px;
-        margin-left: -650px;
+        margin-top: -290px;
+        margin-left: -595px;
         }
         .online-mobile{
             position: relative;
-            margin-top: -617px;
-            margin-left: -85px;
+            margin-top: -570px;
+            margin-left: -80px;
+            width: 450px;
+        }
+        .box{
+            display: block;
+            position: absolute;
+            margin-top: 210px;
+            margin-left: -94px;
+        }
+
+        .shadow-box{
+            display: block;
+    width: 60px;
+    height: 68px;
+    position: absolute;
+    transform: perspective(10cm) rotateX(54deg) rotateY(0deg) rotateZ(45deg);
+    margin-top: 255px;
+    margin-left: -27px;
+    box-shadow: -10px 30px 57px -7px #000000;
+    z-index: -1;
+
+
         }
     }
     .faq{
-        padding-top: 67px;
+        padding-top: 80px;
         padding-left: 15px;
         padding-right: 95px;
     }

@@ -57,23 +57,27 @@ body{
     box-shadow: 0px 13px 68px -15px #000000;
 }
 
-.card-img{
+.card-mobile-img{
     width: 100%;
     height: 120px;
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-}
 
-.pattern-mobile{
-    position: absolute;
-    margin-top: -12px;
+    .pattern-mobile{
+        position: absolute;
+        margin-top: -12px;
+    }
+
+    .online-mobile{
+        position: absolute;
+        margin-top: -140px;
+        margin-left: -28px;
+    }
 }
-.online-mobile{
-    position: absolute;
-    margin-top: -140px;
-    margin-left: -28px;
+.card-desktop-img{
+    display: none;
 }
 
 .faq{
@@ -134,3 +138,41 @@ body{
     }
   }
   
+  @media (min-width: 1024px){
+
+    .card{
+        display: grid;
+        width: 65%;
+        margin: 0px;
+        height: 500px;
+        grid-template-columns:50% 50%;
+        overflow: hidden;
+    }
+    .card-mobile-img{
+        display: none;
+    }
+
+    .card-desktop-img{
+        display: inherit;
+        overflow: hidden;
+
+        .pattern-mobile{
+            position: relative;
+        margin-top: -300px;
+        margin-left: -650px;
+        }
+        .online-mobile{
+            position: relative;
+            margin-top: -617px;
+            margin-left: -85px;
+        }
+    }
+    .faq{
+        padding-top: 67px;
+        padding-left: 15px;
+        padding-right: 95px;
+    }
+    .faq-title{
+        text-align: left;
+    }
+}

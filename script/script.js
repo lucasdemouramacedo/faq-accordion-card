@@ -18,22 +18,3 @@ function show(des){
         }
     }
 }
-
-/*function show(des, til, ar) {
-
-    state = document.getElementById(des).style.display;
-    if(state == "none"){
-        document.getElementById(des).style.display = "block";
-        document.getElementById(til).style.fontWeight = 700;
-        document.getElementById(ar).style.transform = "rotate(180deg)";
-        state = "block";
-    }else{
-        document.getElementById(des).style.display = "none";
-        document.getElementById(til).style.fontWeight = 400;
-        document.getElementById(ar).style.transform = "rotate(0deg)";
-        state = "none";
-    }
-
-    if(state == "block"){
-        document.getElementsByClassName(::)    }
-}*/

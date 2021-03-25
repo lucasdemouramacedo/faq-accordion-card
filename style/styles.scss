@@ -173,20 +173,6 @@ body{
             margin-top: 210px;
             margin-left: -94px;
         }
-
-        .shadow-box{
-            display: block;
-    width: 60px;
-    height: 68px;
-    position: absolute;
-    transform: perspective(10cm) rotateX(54deg) rotateY(0deg) rotateZ(45deg);
-    margin-top: 255px;
-    margin-left: -27px;
-    box-shadow: -10px 30px 57px -7px #000000;
-    z-index: -1;
-
-
-        }
     }
     .faq{
         padding-top: 80px;

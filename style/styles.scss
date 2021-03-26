@@ -101,10 +101,11 @@ body{
     color: $VeryDarkGrayishBlue;
     text-align:left;
     border-bottom: 1px solid $LightGrayishBlue;
+    cursor: pointer;
 }
 
 .faq-item-title{
-    cursor: context-menu;
+    cursor: pointer;
     display: inline-block;
     justify-content: space-between;
     padding-bottom: 15px;
@@ -114,6 +115,7 @@ body{
 
 .arrow-icon{
     float: right;
+    cursor:pointer;
 }
 
 .faq-item-description{

@@ -106,10 +106,11 @@ body {
   color: #4a4b5e;
   text-align: left;
   border-bottom: 1px solid #e7e7e9;
+  cursor: pointer;
 }
 
 .faq-item-title {
-  cursor: context-menu;
+  cursor: pointer;
   display: inline-block;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -120,6 +121,7 @@ body {
 
 .arrow-icon {
   float: right;
+  cursor: pointer;
 }
 
 .faq-item-description {
@@ -185,19 +187,6 @@ body {
     position: absolute;
     margin-top: 210px;
     margin-left: -94px;
-  }
-  .card-desktop-img .shadow-box {
-    display: block;
-    width: 60px;
-    height: 68px;
-    position: absolute;
-    -webkit-transform: perspective(10cm) rotateX(54deg) rotateY(0deg) rotateZ(45deg);
-            transform: perspective(10cm) rotateX(54deg) rotateY(0deg) rotateZ(45deg);
-    margin-top: 255px;
-    margin-left: -27px;
-    -webkit-box-shadow: -10px 30px 57px -7px #000000;
-            box-shadow: -10px 30px 57px -7px #000000;
-    z-index: -1;
   }
   .faq {
     padding-top: 80px;
